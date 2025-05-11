@@ -1,0 +1,14 @@
+{
+  "siteName": "My Portfolio",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi, I'm Shahid",
+    "subtitle": "A passionate full stack developer crafting modern and responsive applications.",
+    "cta": "View My Work"
+  }
+}

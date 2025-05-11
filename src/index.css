@@ -1,0 +1,41 @@
+/* Global Styles */
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #333;
+  --bg-color-dark: #333;
+  --text-color-dark: #ffffff;
+}
+
+/* Apply light theme by default */
+[data-theme="light"] {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+}
+
+/* Apply dark theme when data-theme is set to dark */
+[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+/* Other global styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme switch */
+}
+
+/* Example styles for the header and other sections */
+.portfolio-header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Any other specific styles you may need for the light and dark themes */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+}

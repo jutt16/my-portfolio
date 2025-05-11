@@ -1,0 +1,14 @@
+{
+  "siteName": "Mon Portfolio",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bonjour, je suis Shahid",
+    "subtitle": "Un développeur web passionné créant des applications modernes et réactives.",
+    "cta": "Voir mes projets"
+  }
+}
