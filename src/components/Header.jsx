@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import "./Header.css"; // Make sure this CSS file is imported
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import "./Header.css";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -8,18 +10,17 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check if there's a saved theme in localStorage
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       setTheme(savedTheme);
     }
-    document.documentElement.setAttribute("data-theme", theme); // Apply theme globally
+    document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    localStorage.setItem("theme", newTheme); // Save theme to localStorage
+    localStorage.setItem("theme", newTheme);
   };
 
   const changeLanguage = (lng) => {
@@ -27,14 +28,13 @@ export default function Header() {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the mobile menu
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className={`portfolio-header ${isMenuOpen ? "active" : ""}`}>
       <div className="logo">{t("siteName")}</div>
 
-      {/* Hamburger Menu for Mobile */}
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
         <span></span>
@@ -43,10 +43,30 @@ export default function Header() {
 
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#home">{t("nav.home")}</a></li>
-          <li><a href="#about">{t("nav.about")}</a></li>
-          <li><a href="#projects">{t("nav.projects")}</a></li>
-          <li><a href="#contact">{t("nav.contact")}</a></li>
+          <li>
+            <HashLink smooth to="/#home" onClick={() => setIsMenuOpen(false)}>
+              {t("nav.home")}
+            </HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="/#about" onClick={() => setIsMenuOpen(false)}>
+              {t("nav.about")}
+            </HashLink>
+          </li>
+          <li>
+            <HashLink
+              smooth
+              to="/#projects"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t("nav.projects")}
+            </HashLink>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              {t("nav.contact")}
+            </Link>
+          </li>
         </ul>
       </nav>
 

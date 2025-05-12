@@ -20,5 +20,20 @@
     "skill3": "Développement Backend (Laravel, Node.js)",
     "skill4": "MERN Stack (MongoDB, Express, React, Node)",
     "motto": "Le code est comme l'humour. Quand vous devez l'expliquer, c'est mauvais."
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Travaillons ensemble ou dites juste bonjour !",
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "message": "Votre message",
+      "submit": "Envoyer le message"
+    },
+    "info": {
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "location": "Emplacement"
+    }
   }
 }
