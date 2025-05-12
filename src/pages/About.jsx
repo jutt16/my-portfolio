@@ -7,10 +7,10 @@ export default function About() {
   const { t } = useTranslation();
 
   const skills = [
-    { image: "./public/images/web.png", title: t("about.skill1") },
-    { image: "./public/images/mobile.png", title: t("about.skill2") },
-    { image: "./public/images/backend.png", title: t("about.skill3") },
-    { image: "./public/images/mern.png", title: t("about.skill4") },
+    { image: "/public/images/web.png", title: t("about.skill1") },
+    { image: "/public/images/mobile.png", title: t("about.skill2") },
+    { image: "/public/images/backend.png", title: t("about.skill3") },
+    { image: "/public/images/mern.png", title: t("about.skill4") },
   ];
 
   return (
