@@ -86,7 +86,8 @@
 @media (max-width: 768px) {
   .portfolio-header .controls {
     display: none;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: center;
     position: absolute;
     top: calc(100px + 200px); /* Adjust based on your nav height */
     right: 0;
