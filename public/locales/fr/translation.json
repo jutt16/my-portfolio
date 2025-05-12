@@ -10,5 +10,15 @@
     "title": "Bonjour, je suis Shahid",
     "subtitle": "Un développeur web passionné créant des applications modernes et réactives.",
     "cta": "Voir mes projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Bonjour, je suis Shahid, un développeur passionné et compétent avec un amour pour la création d'expériences numériques significatives. Je me spécialise dans le développement web et mobile, y compris les technologies Flutter, Laravel et MERN stack. Je crois en la fourniture d'un code de qualité et à la création d'applications évolutives qui aident les entreprises à se développer et à prospérer.",
+    "skillsTitle": "Mes compétences",
+    "skill1": "Développement web (React, HTML, CSS, JavaScript)",
+    "skill2": "Développement d'applications mobiles (Flutter, Android)",
+    "skill3": "Développement Backend (Laravel, Node.js)",
+    "skill4": "MERN Stack (MongoDB, Express, React, Node)",
+    "motto": "Le code est comme l'humour. Quand vous devez l'expliquer, c'est mauvais."
   }
 }

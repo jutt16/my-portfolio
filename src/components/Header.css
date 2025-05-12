@@ -84,13 +84,27 @@
 
 /* Styles for the mobile menu button (hamburger) */
 @media (max-width: 768px) {
+  .portfolio-header .controls {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(60px + 200px); /* Adjust based on your nav height */
+    right: 0;
+    background-color: var(--bg-color);
+    width: -webkit-fill-available;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .portfolio-header.active .controls {
+    display: flex;
+  }
+
   .portfolio-header nav ul {
     display: none;
     align-items: anchor-center;
   }
-  .portfolio-header .controls {
-    display: none;
-  }
+
   .hamburger {
     display: flex;
   }

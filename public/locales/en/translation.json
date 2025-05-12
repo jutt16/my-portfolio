@@ -10,5 +10,15 @@
     "title": "Hi, I'm Shahid",
     "subtitle": "A passionate full stack developer crafting modern and responsive applications.",
     "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hi, I'm Shahid, a passionate and skilled developer with a love for creating meaningful digital experiences. I specialize in Web and Mobile App development, including Flutter, Laravel, and MERN stack technologies. I believe in delivering quality code and building scalable applications that help businesses grow and thrive.",
+    "skillsTitle": "My Skills",
+    "skill1": "Web Development (React, HTML, CSS, JavaScript)",
+    "skill2": "Mobile App Development (Flutter, Android)",
+    "skill3": "Backend Development (Laravel, Node.js)",
+    "skill4": "MERN Stack (MongoDB, Express, React, Node)",
+    "motto": "Code is like humor. When you have to explain it, it’s bad."
   }
 }
