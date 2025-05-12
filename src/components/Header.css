@@ -88,7 +88,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: calc(60px + 200px); /* Adjust based on your nav height */
+    top: calc(100px + 200px); /* Adjust based on your nav height */
     right: 0;
     background-color: var(--bg-color);
     width: -webkit-fill-available;
